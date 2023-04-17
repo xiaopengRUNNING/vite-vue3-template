@@ -15,8 +15,10 @@ module.exports = {
   },
   plugins: ['vue', '@typescript-eslint'],
   rules: {
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
     'import/no-extraneous-dependencies': 0,
-    // 处理 eslint 和 prettier 冲突的规则
+    // 处理 prettier 和 eslint 冲突的规则
     'prettier/prettier': [
       'error',
       {
