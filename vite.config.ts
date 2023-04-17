@@ -25,4 +25,14 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      less: {
+        modifyVars: {
+          'arcoblue-6': '#f85959',
+        },
+        javascriptEnabled: true,
+      },
+    },
+  },
 });
