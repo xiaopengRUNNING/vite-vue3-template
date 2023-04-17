@@ -6,7 +6,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['airbnb-base', 'plugin:vue/vue3-essential', 'plugin:prettier/recommended'],
+  extends: ['./eslintrc-auto-import.json', 'airbnb-base', 'plugin:vue/vue3-essential', 'plugin:prettier/recommended'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
