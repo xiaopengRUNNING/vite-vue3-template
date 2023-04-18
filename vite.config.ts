@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 import { ArcoResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers';
 import svgLoader from 'vite-svg-loader';
 
@@ -12,6 +13,7 @@ import svgLoader from 'vite-svg-loader';
 export default defineConfig({
   plugins: [
     vue(),
+    vueJsx(),
     Icons({ autoInstall: true, compiler: 'vue3' }),
     svgLoader(),
     AutoImport({
