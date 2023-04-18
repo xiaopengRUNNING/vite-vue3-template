@@ -18,6 +18,12 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 0,
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['index'], // 需要忽略的组件名
+      },
+    ],
     // 处理 prettier 和 eslint 冲突的规则
     'prettier/prettier': [
       'error',
