@@ -44,10 +44,10 @@
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.2.0",
+    "vite-svg-loader": "^4.0.0",
     "vue-tsc": "^1.2.0"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": "eslint --cache --fix",
-    "*.js": "eslint --cache --fix"
+    "*.{js,ts,jsx,tsx,vue,less,css}": "eslint --cache --fix"
   }
 }

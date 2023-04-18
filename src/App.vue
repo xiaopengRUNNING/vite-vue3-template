@@ -1,6 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ViteSvg from '@/assets/vue.svg?component';
+</script>
 
 <template>
+  <ViteSvg />
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -9,8 +12,6 @@
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <a-button type="primary">111</a-button>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
