@@ -3,6 +3,8 @@ import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
+import Icons from 'unplugin-icons/vite';
+import IconsResolver from 'unplugin-icons/resolver';
 import { ArcoResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers';
 import svgLoader from 'vite-svg-loader';
 
@@ -10,6 +12,7 @@ import svgLoader from 'vite-svg-loader';
 export default defineConfig({
   plugins: [
     vue(),
+    Icons({ autoInstall: true, compiler: 'vue3' }),
     svgLoader(),
     AutoImport({
       dts: './src/auto-imports.d.ts',
@@ -19,7 +22,7 @@ export default defineConfig({
     }),
     Components({
       dts: './src/components.d.ts',
-      resolvers: [ArcoResolver({ sideEffect: true }), VueUseComponentsResolver()],
+      resolvers: [ArcoResolver({ sideEffect: true }), VueUseComponentsResolver(), IconsResolver()],
     }),
   ],
   resolve: {
