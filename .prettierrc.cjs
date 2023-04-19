@@ -1,6 +1,6 @@
 module.exports = {
   // 每一行的宽度(显示的字符数)
-  printWidth: 120,
+  printWidth: 80,
 
   // tab健的空格数
   tabWidth: 2,

@@ -6,7 +6,12 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['./eslintrc-auto-import.json', 'airbnb-base', 'plugin:vue/vue3-essential', 'plugin:prettier/recommended'],
+  extends: [
+    './eslintrc-auto-import.json',
+    'airbnb-base',
+    'plugin:vue/vue3-essential',
+    'plugin:prettier/recommended',
+  ],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -21,14 +26,14 @@ module.exports = {
     'vue/multi-word-component-names': [
       'error',
       {
-        ignores: ['index'], // 需要忽略的组件名
+        ignores: ['index', '403', '404', '500'], // 需要忽略的组件名
       },
     ],
     // 处理 prettier 和 eslint 冲突的规则
     'prettier/prettier': [
       'error',
       {
-        printWidth: 120,
+        printWidth: 80,
         singleQuote: true,
         semi: true,
       },
