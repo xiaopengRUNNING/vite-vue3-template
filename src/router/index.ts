@@ -4,7 +4,25 @@ import createRouterGuard from './guard';
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [...appRoutes],
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: () => import('@/views/home/index.vue'),
+      meta: {
+        // router other information
+      },
+    },
+    ...appRoutes,
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'noFound',
+      component: () => import('@/views/exception/404.vue'),
+      meta: {
+        title: '404',
+      },
+    },
+  ],
   scrollBehavior() {
     return { top: 0 };
   },
