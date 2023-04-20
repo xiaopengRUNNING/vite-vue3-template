@@ -81,7 +81,7 @@ const featureList = [
             type="outline"
             shape="circle"
             target="_blank"
-            href="https://github.com/pxc180/vite-vue3-template"
+            href="https://github.com/xiaopengRUNNING/vite-vue3-template"
           >
             <template #icon>
               <icon-github />
