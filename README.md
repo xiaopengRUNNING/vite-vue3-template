@@ -1,7 +1,5 @@
 # Vite4 + Vue3 + Typescript
 
----
-
 ## 介绍
 基于 Vue3、Vite4 和 Typescript 搭建的项目模板，帮你更快更好的创建功能完善的模板，其中使用到的库和依赖皆为最新版本，并在之后持续更新！！！
 [在线预览](https://vite-vue3-typescript.netlify.app/)
@@ -27,6 +25,7 @@
 - [@vitejs/plugin-vue-jsx](https://github.com/vitejs/vite-plugin-vue) - 支持 tsx/jsx 写法
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - 自动按需引入Vue 组件
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - 自动按需引入 Vue、Vue Router、VueUse 中的 API
+- [unplugin-icons](https://github.com/antfu/unplugin-icons) - 图标库自动按需引入
 - [vite-svg-loader](https://github.com/jpkleemans/vite-svg-loader) - 以组件形式使用 SVG 图片
 
 PS：SVG 图片引入时后缀名后需添加`?component`
