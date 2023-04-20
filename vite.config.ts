@@ -14,6 +14,20 @@ import svgLoader from 'vite-svg-loader';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    host: true, // 可以以IP访问
+    port: 8080, // 端口
+    open: true, // 自动打开游览器
+    cors: true, // 允许跨域
+    proxy: {
+      '/api': {
+        // 这里配置真实的后端环境地址
+        target: 'http://example',
+        changeOrigin: true,
+        rewrite: (path) => path.replace('/api/', '/'),
+      },
+    },
+  },
   build: {
     // 消除打包大小超过500kb警告
     chunkSizeWarningLimit: 2000,
