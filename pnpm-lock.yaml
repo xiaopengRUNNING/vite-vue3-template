@@ -51,6 +51,9 @@ devDependencies:
   '@vitejs/plugin-vue-jsx':
     specifier: ^3.0.1
     version: registry.npmmirror.com/@vitejs/plugin-vue-jsx@3.0.1(vite@4.2.0)(vue@3.2.47)
+  '@vueuse/components':
+    specifier: ^10.1.0
+    version: registry.npmmirror.com/@vueuse/components@10.1.0(vue@3.2.47)
   '@vueuse/core':
     specifier: ^10.0.2
     version: registry.npmmirror.com/@vueuse/core@10.0.2(vue@3.2.47)
@@ -1632,6 +1635,20 @@ packages:
     name: '@vue/shared'
     version: 3.2.47
 
+  registry.npmmirror.com/@vueuse/components@10.1.0(vue@3.2.47):
+    resolution: {integrity: sha512-U3c5tPUAxfwWoBSpFbCNFMEM8/jSZ0+5M1n9YWcahyb+uRNo4UmsofX/Hzs6K56PSm0g+uuhZVwSnMq8ttD8Lw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/components/-/components-10.1.0.tgz}
+    id: registry.npmmirror.com/@vueuse/components/10.1.0
+    name: '@vueuse/components'
+    version: 10.1.0
+    dependencies:
+      '@vueuse/core': registry.npmmirror.com/@vueuse/core@10.1.0(vue@3.2.47)
+      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared@10.1.0(vue@3.2.47)
+      vue-demi: registry.npmmirror.com/vue-demi@0.14.0(vue@3.2.47)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: true
+
   registry.npmmirror.com/@vueuse/core@10.0.2(vue@3.2.47):
     resolution: {integrity: sha512-/UGc2cXbxbeIFLDSJyHUjI9QZ4CJJkhiJe9TbKNPSofcWmYhhUgJ+7iw9njXTKu/Xc3Z6UeXVR9fosW1+cyrnQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/core/-/core-10.0.2.tgz}
     id: registry.npmmirror.com/@vueuse/core/10.0.2
@@ -1647,10 +1664,31 @@ packages:
       - vue
     dev: true
 
+  registry.npmmirror.com/@vueuse/core@10.1.0(vue@3.2.47):
+    resolution: {integrity: sha512-3Znoa5m5RO+z4/C9w6DRaKTR3wCVJvD5rav8HTDGsr+7rOZRHtcgFJ8NcCs0ZvIpmev2kExTa311ns5j2RbzDQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/core/-/core-10.1.0.tgz}
+    id: registry.npmmirror.com/@vueuse/core/10.1.0
+    name: '@vueuse/core'
+    version: 10.1.0
+    dependencies:
+      '@types/web-bluetooth': registry.npmmirror.com/@types/web-bluetooth@0.0.16
+      '@vueuse/metadata': registry.npmmirror.com/@vueuse/metadata@10.1.0
+      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared@10.1.0(vue@3.2.47)
+      vue-demi: registry.npmmirror.com/vue-demi@0.14.0(vue@3.2.47)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: true
+
   registry.npmmirror.com/@vueuse/metadata@10.0.2:
     resolution: {integrity: sha512-APSjlABrV+Q74c+FR0kFETvcN9W2pAaT3XF3WwqWUuk4srmVxv7DY4WshZxK2KYk1+MVY0Fus6J1Hk/JXVm6Aw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/metadata/-/metadata-10.0.2.tgz}
     name: '@vueuse/metadata'
     version: 10.0.2
+    dev: true
+
+  registry.npmmirror.com/@vueuse/metadata@10.1.0:
+    resolution: {integrity: sha512-cM28HjDEw5FIrPE9rgSPFZvQ0ZYnOLAOr8hl1XM6tFl80U3WAR5ROdnAqiYybniwP5gt9MKKAJAqd/ab2aHkqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/metadata/-/metadata-10.1.0.tgz}
+    name: '@vueuse/metadata'
+    version: 10.1.0
     dev: true
 
   registry.npmmirror.com/@vueuse/shared@10.0.2(vue@3.2.47):
@@ -1658,6 +1696,18 @@ packages:
     id: registry.npmmirror.com/@vueuse/shared/10.0.2
     name: '@vueuse/shared'
     version: 10.0.2
+    dependencies:
+      vue-demi: registry.npmmirror.com/vue-demi@0.14.0(vue@3.2.47)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: true
+
+  registry.npmmirror.com/@vueuse/shared@10.1.0(vue@3.2.47):
+    resolution: {integrity: sha512-2X52ogu12i9DkKOQ01yeb/BKg9UO87RNnpm5sXkQvyORlbq8ONS5l39MYkjkeVWWjdT0teJru7a2S41dmHmqjQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/shared/-/shared-10.1.0.tgz}
+    id: registry.npmmirror.com/@vueuse/shared/10.1.0
+    name: '@vueuse/shared'
+    version: 10.1.0
     dependencies:
       vue-demi: registry.npmmirror.com/vue-demi@0.14.0(vue@3.2.47)
     transitivePeerDependencies:
